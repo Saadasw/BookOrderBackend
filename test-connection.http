@@ -1,0 +1,15 @@
+### Check if the FastAPI server is running
+GET http://localhost:10000/orders
+
+###
+
+### Submit a test order to your FastAPI endpoint
+POST http://localhost:10000/orders
+Content-Type: application/json
+
+{
+  "phone_number": "01812345678",
+  "address": "123 Main Street",
+  "payment": "cod",
+  "book_list": ["Clean Code", "The Pragmatic Programmer"]
+}
